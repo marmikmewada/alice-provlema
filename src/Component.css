@@ -1,0 +1,59 @@
+.Component{
+    max-width: 40%;
+    min-width: 40%;
+    padding: 0.7rem;
+    display: grid;
+    grid-template-columns: 1fr 1.8fr;
+    gap: 0.6rem;
+    background: white;
+    border-radius: 10px;
+
+
+}
+.Component>.image{
+    border-radius: 10px;
+
+    grid-column: 1/2;
+}
+.Component>.image>img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    
+}
+.Component>.data{
+    grid-column: 2/3;
+    padding: 0.6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    gap: 0.6rem;
+    /* flex-wrap: wrap; */
+
+}
+.data>h3,p,.data-inside{
+    margin: 0;
+
+}
+.Component>.data>.data-inside{
+    padding: 0.6rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background: grey;
+    border-radius: 10px;
+    /* flex-wrap: wrap; */
+}
+
+.data-inside>.actions{
+    grid-column: 1/2;
+    justify-self: flex-start;
+}
+.data-inside>.followers{
+    grid-column: 2/3;
+    justify-self: center;
+}
+.data-inside>.ratings{
+    grid-column: 3/4;
+    justify-self: flex-end;
+}

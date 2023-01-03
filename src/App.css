@@ -1,0 +1,33 @@
+.App{
+  width: 100vw;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 20vh 1fr;
+  gap: 1rem;
+  /* padding: 5rem; */
+  background: skyblue;
+  margin: 0;
+}
+.section-one{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-one>h1{
+  font-size: 2rem;
+}
+.section-two{
+  justify-self: center;
+  width: 100%;
+  height: auto;
+  /* padding: 3rem; */
+  padding-left: 7rem;
+  padding-right: 6.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  /* background: red; */
+}
